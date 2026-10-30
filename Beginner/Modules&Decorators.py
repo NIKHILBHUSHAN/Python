@@ -31,3 +31,22 @@ def hello():
     print("Hello World!")
 
 hello()
+
+def my_decorator(func):
+
+    def wrapper(*args, **kwargs):
+        print("Before execution")
+
+        result = func(*args, **kwargs)
+
+        print("After execution")
+
+        return result
+
+    return wrapper
+
+def add(a, b):
+    return a + b
+
+addition=my_decorator(add)
+print(addition(10,20))
