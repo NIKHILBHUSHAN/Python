@@ -23,3 +23,16 @@ print(c_comp)
 
 prod=reduce(lambda x,y:x*y,a)
 print(prod)
+
+nums=[2,4,6,8,10]
+result=map(lambda x:x*3,nums)
+print(list(result))
+
+nums=[12,5,17,8,21,4,30,9]
+f=filter(lambda x:x>10,nums)
+result=map(lambda x:x*x,f)
+print(list(result))
+
+nums=[2,3,4,5,6]
+result=reduce(lambda x,y:x*y,nums)
+print(result)
