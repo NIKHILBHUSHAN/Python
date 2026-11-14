@@ -1,4 +1,3 @@
-# Exception Handling
 try:
     result=2/0
 except ZeroDivisionError:
@@ -7,8 +6,7 @@ else:
     print("No exceptions occurred.")
 finally:
     print("Execution complete.")
-
-# Custom Exceptions
+ 
 class DogNotFoundException(Exception):
     pass
 
