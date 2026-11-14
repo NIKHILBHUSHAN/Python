@@ -40,11 +40,3 @@ class UserEncoder(json.JSONEncoder):
         return super().default(obj)
 
 user_json_b=json.dumps(user,cls=UserEncoder)
-
-def decode_user(dct):
-    if "User" in dct:
-        return User(name=dct["name"],age=dct["age"])
-    return dct
-
-user_obj=json.loads(user_json,object_hook=decode_user)
-print(type(user_obj),user_obj.name)
