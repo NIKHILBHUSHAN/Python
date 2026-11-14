@@ -38,7 +38,11 @@ dict_a={"name":"Mary","age":27,"email":"mary@xyz.com"}
 dict_b={"name":"Mary","age":28,"city":"Boston"}
 
 dict_a.update(dict_b)
+print(dict_a)
 
 valid_dict={3:9,6:36,(8,7):15}
-
+print(valid_dict)
+for key in valid_dict.keys():
+    print(key)
+print(valid_dict[(8,7)])
 # invalid_dict={[1,2]:"value"}
